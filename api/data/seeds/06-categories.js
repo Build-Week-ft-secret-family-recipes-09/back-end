@@ -1,6 +1,6 @@
 
 exports.seed = function(knex, Promise) {
-  return knex('steps').insert([
+  return knex('categories').insert([
 		{ category_name: 'dinner'},
 		{ category_name: 'chicken'},
 		{ category_name: 'breakfast'},

@@ -1,6 +1,6 @@
 
 exports.seed = function(knex, Promise) {
-	return knex('ingredients').insert([
+	return knex('recipes_categories').insert([
 		{ recipe_id: 1, category_id: 1 },
 		{ recipe_id: 1, category_id: 5 },
 		{ recipe_id: 2, category_id: 7 },
