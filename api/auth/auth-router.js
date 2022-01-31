@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const usersModel = require("../users/usersModel");
+const usersModel = require("../users/users-model");
 const {
     validateLoginPayload,
     validateRegisterPayload,
