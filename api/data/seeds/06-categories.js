@@ -1,5 +1,5 @@
 
-exports.seed = function(knex, Promise) {
+exports.seed = function(knex, Promise) {//eslint-disable-line
   return knex('steps').insert([
 		{ category_name: 'dinner'},
 		{ category_name: 'chicken'},

@@ -1,5 +1,5 @@
 const {body, header, validationResult} = require("express-validator");
-const usersModel = require("../users/usersModel");
+const usersModel = require("../users/users-model");
 const jwt = require("jsonwebtoken");
 const { JWT_SECRET } = require("./secrets");
 
@@ -17,7 +17,7 @@ const checkValidation = (status,message) =>{
     };
 };
 
-const validateRegisterPayload = [
+const validateRegisterPayload = [ 
     body("username")
     .isString()
     .trim()

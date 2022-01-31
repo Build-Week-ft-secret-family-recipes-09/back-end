@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const usersModel = require("../users/usersModel");
+const usersModel = require("../users/users-model");
 const {
     validateLoginPayload,
     validateRegisterPayload,
@@ -50,7 +50,7 @@ router.post("/login", validateLoginPayload, usernameExist, (req,res,next) => {
             })
         }
         else{
-            res.status(401).json({message:"username or password incorrect"});
+            res.status(401).json({message:"You wrong for that!"});
         }
     }
     catch(err){

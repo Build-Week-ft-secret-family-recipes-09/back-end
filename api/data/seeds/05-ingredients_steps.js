@@ -1,5 +1,5 @@
 
-exports.seed = function(knex, Promise) {
+exports.seed = function(knex, Promise) {//eslint-disable-line
   return knex('steps_ingredients').insert([
     { step_id: 1, ingredient_id: 3, amount: '56 liters' },
 		{ step_id: 1, ingredient_id: 1, amount: '73 liters' },
