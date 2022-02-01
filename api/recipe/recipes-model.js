@@ -66,7 +66,7 @@ async function findBy(filter) {
 //   const [recipe_id] = await db('recipes').insert()
 // }
 
-module.exports = 
+module.exports = {
   findAll,
   findById,
   findBy,
