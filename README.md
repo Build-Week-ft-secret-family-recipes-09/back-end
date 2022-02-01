@@ -92,3 +92,8 @@ Github: (https://github.com/itsmerobert12)
 **_Full Stack Engineer_**  
 Linkedin: (https://www.linkedin.com/in/sagun-shrestha-89ab60223/)  
 Github: (https://github.com/sagun1151)
+
+**_Anthony Coman_**  
+**_Full Stack Engineer_**  
+Linkedin: (https://www.linkedin.com/in/anthony-coman/)  
+Github: (https://github.com/acoman-cloud)
