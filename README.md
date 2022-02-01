@@ -97,8 +97,8 @@
 
 **_Roberto Gomez_**  
 **_Full Stack Engineer_**  
-### Linkedin: (https://www.linkedin.com/in/roberto-c-gomez-86a735b6/)  
-### Github: (https://github.com/itsmerobert12)
+Linkedin: (https://www.linkedin.com/in/roberto-c-gomez-86a735b6/)  
+Github: (https://github.com/itsmerobert12)
 
 ### **_Sagun Shrestha_**
 ### **_Full Stack Engineer_**
