@@ -1,8 +1,8 @@
 # Installation
 
-step one: git clone project
-step two: npm install dependencies
-step three: npm run server
+* step one: git clone project
+* step two: npm install dependencies
+* step three: npm run server
 
 # Database Tables
 
