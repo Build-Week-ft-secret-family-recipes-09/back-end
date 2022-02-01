@@ -67,37 +67,19 @@
 
 ### Authentication End Points
 
-##### Register 
-* Method: POST
-* URL: `/api/auth/register`
-* Requires: { username, password, email }
-* Returns: { user_id, username }
-
 |Method|Endpoint|Body(required)|Body(optional)|notes|
-|-|-|-|-|-|
-|POST  | `/api/auth/register`  |username, password, email|none          |Creates a new user, on sucess returns user_id and username|
-|      |                       |                   |                 |             |
-|      |                       |                   |                 |             |
-
-##### Login 
-* Method: POST
-* URL: `/api/auth/login`
-* Requires: { username, password }
-* Returns:  { user_id, username, token }
+|----|--------------------|-------------------------|----|--------------------|
+|POST|`/api/auth/register`|username, password, email|none|Creates a new user, on sucess returns user_id and username|
+|POST|`/api/auth/login`|username, password|none|Logs in user who already exists. On success returns user_id, username, and token|
 
 ### Recipe End Points
 
-##### GET all
-* Method: GET
-* URL: `/api/recipes`
-* Required: Null
-* Returns { recipe_name, source_name, category_name, steps:[
-	{ingredients}, 
-	{step_number} 
-]}
-
-
-
+|Method|Endpoint|Body(required)|Body(optional)|notes|
+|-|-|-|-|-|
+|GET|`/api/recipes`|nothing|nothing|Returns all available recipes from database|
+|GET|`/api/recipes/:id`|nothing|nothing|return recipe object with the id passed through the URL|
+|PUT|wip|wip|wip|wip|
+|DELETE|wip|wip|wip|wip|
 
 # Meet the Team
 
