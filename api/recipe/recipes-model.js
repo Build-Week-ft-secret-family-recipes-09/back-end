@@ -48,7 +48,7 @@ async function findBy(filter) {
   const data = await db("recipes_categories as rc")
     .leftJoin("recipes as r", "rc.recipe_id", "r.recipe_id")
     .leftJoin("categories as c", "rc.category_id", "c.category_id")
-    .where('category_name',filter)
+    .where(filter)
     .select(
       "recipe_category_id",
       "r.recipe_id",
