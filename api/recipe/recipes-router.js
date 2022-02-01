@@ -40,4 +40,8 @@ router.get('/category/:category_name', async (req, res, next) => {
 //     }
 // })
 
+//heyyy 
+//why not working
+//helpp
+
 module.exports = router
