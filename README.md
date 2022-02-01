@@ -95,8 +95,8 @@
 
 # Meet the Team
 
-### **_Roberto Gomez_**
-### **_Full Stack Engineer_**
+**_Roberto Gomez_** \n
+**_Full Stack Engineer_**
 ### Linkedin: (https://www.linkedin.com/in/roberto-c-gomez-86a735b6/)
 ### Github: (https://github.com/itsmerobert12)
 
