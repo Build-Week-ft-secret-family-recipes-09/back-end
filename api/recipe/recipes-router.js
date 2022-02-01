@@ -21,10 +21,10 @@ router.get('/:id', async (req, res, next) => {
     }
 })
 
-router.post('/category', async (req, res, next) => {
+router.get('/category/:category_name', async (req, res, next) => {
     try {
-        const category_name = req.body.category_name
-        const data = await Recipes.findBy(category_name)
+        const { category_name }  = req.params
+        const data = await Recipes.findBy({category_name})
         res.json(data)
     } catch (error) {
         next(error)
