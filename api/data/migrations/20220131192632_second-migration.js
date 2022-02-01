@@ -21,7 +21,7 @@ exports.up = async (knex) => {
 				.onDelete('CASCADE')
 				.onUpdate('CASCADE')
 			table.integer('step_number', 128).notNullable()
-			table.string('description', 128).notNullable()
+			table.string('description').notNullable()
 		})
 	await knex.schema
 		.createTable('ingredients_steps', table => {
