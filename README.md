@@ -95,4 +95,4 @@
 
 # Meet the Team
 
-** * Roberto Gomez * **
+** Roberto Gomez **
