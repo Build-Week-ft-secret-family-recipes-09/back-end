@@ -78,8 +78,9 @@
 |-|-|-|-|-|
 |GET|`/api/recipes`|nothing|nothing|Returns all available recipes from database|
 |GET|`/api/recipes/:id`|nothing|nothing|return recipe object with the id passed through the URL|
+|POST|wip|wip|wip|wip|
 |PUT|wip|wip|wip|wip|
-|DELETE|wip|wip|wip|wip|
+|DELETE|`/api/recipes/:id`|nothing|nothing|On success returns deletion succesful|
 
 # Meet the Team
 

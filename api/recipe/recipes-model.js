@@ -58,17 +58,27 @@ async function findBy(filter) {
       "c.category_name"
     );
 
-    return data
+  return data
 }
 
-// await function add(body){
-//   const {}
-//   const [recipe_id] = await db('recipes').insert()
+// async function add({ recipe_name, source_name, steps }) {
+//   let created_recipe_id
+//   await db.transaction(async trx => {
+//     let recipe_id_to_use
+//     const [recipe] = await trx('recipes').insert({})
+//   })
 // }
+
+async function deletebyId(id) {
+  const data = await db('recipes').where('recipe_id', id).del()
+  return data
+}
 
 module.exports = {
   findAll,
   findById,
   findBy,
+  deletebyId,
+  add,
 };
 
