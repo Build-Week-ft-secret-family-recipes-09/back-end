@@ -73,8 +73,8 @@
 * Requires: { username, password, email }
 * Returns: { user_id, username }
 
-|Method|Endpoint|Body (required)|Body(optional)|notes|
-|------|-----------------------|-------------------------|--------------|-------------|
+|Method|Endpoint|Body(required)|Body(optional)|notes|
+
 |POST  | `/api/auth/register`  |username, password, email|none          |Creates a new user, on sucess returns user_id and username|
 |      |                       |                   |                 |             |
 |      |                       |                   |                 |             |
