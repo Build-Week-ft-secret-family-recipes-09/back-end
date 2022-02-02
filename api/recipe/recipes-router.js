@@ -12,9 +12,9 @@ router.get('/', async (req, res, next) => {
     }
 })
 
-router.get('/:id', async (req, res, next) => {
+router.get('/:recipe_id', async (req, res, next) => {
     try {
-        const recipe = await Recipes.findById(req.params.id)
+        const recipe = await Recipes.findById(req.params.recipe_id)
         res.json(recipe)
     } catch (error) {
         next(error)
@@ -34,7 +34,6 @@ router.get('/category/:category_name', async (req, res, next) => {
 router.post('/add', async (req, res, next) => {
     try {
         const data = await Recipes.add(req.body)
-        console.log('req.body', req.body, 'data', data)
         res.status(201).json(data)
     } catch (error) {
         next(error)

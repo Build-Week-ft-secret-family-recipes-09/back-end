@@ -16,10 +16,11 @@
 
 ### Recipes
 |attribute  |data type|	required		|
-|-----------|---------|-------------|
-|recipe_id  |integer  |auto-assigns |
-|recipe_name|string   |Yes          |
-|source_name|string   |Yes          |
+|-------------|---------|-------------|
+|recipe_id    |integer  |auto-assigns |
+|recipe_name  |string   |Yes          |
+|source_name  |string   |Yes          |
+|category_name|string   |Yes          |
 
 ### Ingredients
 |attribute      |data type|	required   |
@@ -43,21 +44,6 @@
 |ingredient_step_id|integer  |auto-assigns     |
 |step_id(FK)       |integer  |Yes              |
 |ingredient_id(FK) |integer  |Yes              |
-
-* FK: foreign key
-
-### Categories
-|attribute      |data type|	     required      |
-|---------------|---------|--------------------|
-|category_id    |integer  |auto-assigns        |
-|category_name  |string   |Yes + must be unique|
-
-### Recipes_Categories
-|		attribute      |data type|		required		 |
-|------------------|---------|-----------------|
-|recipe_category_id|integer  |auto-assigns     |
-|recipe_id(FK)     |integer  |Yes              |
-|category_id(FK)   |integer  |Yes              |
 
 * FK: foreign key
 

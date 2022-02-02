@@ -5,7 +5,7 @@ const {
     validateRegisterPayload,
     usernameDoesNotExist,
     usernameExist
-} = require("./auth-middleware");
+} = require("./auth-middleware.js");
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 const {JWT_SECRET} = require("./secrets");
