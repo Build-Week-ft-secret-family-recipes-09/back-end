@@ -12,7 +12,6 @@
 |user_id  |integer  |auto-assigns         |
 |username |string   |Yes + must be unique |
 |password |string   |Yes                  |
-|email    |string   |No                   |
 
 ### Recipes
 |attribute  |data type|	required		|
@@ -55,8 +54,8 @@
 
 |Method|Endpoint|Body(required)|Body(optional)|notes|
 |----|--------------------|-------------------------|----|--------------------|
-|POST|`/api/auth/register`|username, password, email|none|Creates a new user, on sucess returns user_id and username|
-|POST|`/api/auth/login`|username, password|none|Logs in user who already exists. On success returns user_id, username, and token|
+|POST|`/api/auth/register`|wip|wip|wip|
+|POST|`/api/auth/login`|wip|wip|wip|
 
 ### Recipe End Points
 
@@ -64,7 +63,7 @@
 |-|-|-|-|-|
 |GET|`/api/recipes`|nothing|nothing|Returns all available recipes from database|
 |GET|`/api/recipes/:id`|nothing|nothing|return recipe object with the id passed through the URL|
-|POST|wip|wip|wip|wip|
+|POST|`/api/recipes/add`|recipe_name, source_name, steps: [description, step_number] |steps:[amount, ingredient_name], description, category_name|returns newly created recipe|
 |PUT|wip|wip|wip|wip|
 |DELETE|`/api/recipes/:id`|nothing|nothing|On success returns deletion succesful|
 
