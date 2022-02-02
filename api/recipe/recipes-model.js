@@ -1,9 +1,27 @@
 const db = require("../data/db-config");
 
 function findAll() {
-  return db("recipes");
+    return db("recipes");
 }
 
+<<<<<<< HEAD
+function findById(recipe_id) {
+    const data = db("recipes as r ")
+        .leftJoin("steps as s", "r.recipe_id", "s.recipe_id")
+        .leftJoin("ingredients_steps as si", "s.step_id", "si.step_id")
+        .leftJoin("ingredients as i", "si.ingredient_id", "i.ingredient_id")
+        .where("recipe_id", recipe_id)
+        .select(
+            "r.recipe_id",
+            "source_name",
+            "recipe_name",
+            "step_number",
+            "description",
+            "ingredient_name",
+            "amount"
+        );
+    return data;
+=======
 async function findById(recipe_id) {
   const data = await db("recipes as r")
     .leftJoin('steps as s', 'r.recipe_id', 's.recipe_id')
@@ -61,6 +79,7 @@ async function findBy(filter) {
     );
 
   return data
+>>>>>>> ef053bdc4fdaf11cbe4e98a5fd1ef9b2839f2558
 }
 
 async function add({ recipe_name, source_name, category_name, steps }) {

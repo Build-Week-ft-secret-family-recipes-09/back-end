@@ -1,5 +1,5 @@
 
-exports.seed = function(knex, Promise) {
+exports.seed = function (knex, Promise) {// eslint-disable-line
 	return knex('ingredients').insert([
 		{ ingredient_name: 'olive oil' },
 		{ ingredient_name: 'spaghetti' },

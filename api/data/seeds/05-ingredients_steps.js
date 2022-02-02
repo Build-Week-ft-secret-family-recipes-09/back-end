@@ -1,10 +1,10 @@
 
-exports.seed = function(knex, Promise) {
-  return knex('ingredients_steps').insert([
-    { step_id: 1, ingredient_id: 3, amount: '56 liters' },
+exports.seed = function (knex, Promise) {// eslint-disable-line
+	return knex('ingredients_steps').insert([
+		{ step_id: 1, ingredient_id: 3, amount: '56 liters' },
 		{ step_id: 1, ingredient_id: 1, amount: '73 liters' },
 		{ step_id: 2, ingredient_id: 4, amount: '200 liters' },
 		{ step_id: 4, ingredient_id: 2, amount: '156 grams' },
-		{ step_id: 6, ingredient_id: 5, amount: '4 dollars' },		
-  ]);
+		{ step_id: 6, ingredient_id: 5, amount: '4 dollars' },
+	]);
 };
