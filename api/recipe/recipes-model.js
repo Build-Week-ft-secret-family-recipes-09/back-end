@@ -31,7 +31,7 @@ async function findById(recipe_id) {
         return acc.concat({
           step_number: step.step_number,
           description: step.description,
-        });
+        }); 
       }
       console.log('other step.amount', step.amount)
       return acc.concat({
