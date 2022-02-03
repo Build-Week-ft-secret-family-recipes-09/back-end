@@ -39,10 +39,18 @@ router.post('/add', async (req, res, next) => {
         next(error)
     }
 })
+router.put('/:id', async (req, res, next) => {
+    try {
 
-//heyyy 
-//why not working
-//helpp
+    const { recipe_name, source_name, category_name, steps, } = req.body
+    const recipe_id = req.params.id
+        const data = await Recipes.update({ recipe_name, source_name, category_name, steps, recipe_id })
+        res.status(201).json(data)
+    } catch (error) {
+        next(error)
+    }
+})
+
 
 router.delete('/:id', (req, res, next) => {
     Recipes.deletebyId(req.params.id)
